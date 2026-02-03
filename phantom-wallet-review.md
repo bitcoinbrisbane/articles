@@ -22,6 +22,18 @@ EIP-681 defines a URI format (`ethereum:<address>?value=<amount>`) that enables 
 
 **Standard compliance matters.** If Phantom wants to be a serious payment wallet, it needs to properly implement these interoperability standards.
 
+### Test It Yourself
+
+Here's a valid EIP-681 payment request for 0.01 ETH:
+
+```
+ethereum:0x1234567890abcdef1234567890abcdef12345678?value=1e16
+```
+
+![EIP-681 QR Code Example](eip681-qr-example.png)
+
+Scan this with Phantom and see if it works. A compliant wallet should recognize this as a payment request and pre-fill the transaction details.
+
 ## 3. Swap Feature is Non-Functional
 
 The swap feature - arguably one of the most fundamental features of any modern wallet - simply doesn't work. The swap button isn't even clickable.
