@@ -8,3 +8,7 @@ A collection of technical articles and reviews for LinkedIn, focusing on cryptoc
 |-------|-------|------|
 | [Phantom Wallet: A Critical Review](phantom-wallet-review.md) | Wallet Review | 2026-01-29 |
 | [Filecoin: The $257 Million Promise](filecoin-review.md) | Project Review | 2026-03-14 |
+| [The Lodge Raid & Bitcoin Treasury (Reddit)](lodge-bitcoin-treasury-reddit.md) | Opinion / Bitcoin | 2026-03-16 |
+| [The Lodge Raid & Bitcoin Treasury (LinkedIn)](lodge-bitcoin-treasury-linkedin.md) | Opinion / Bitcoin | 2026-03-16 |
+| [The Lodge Raid & Bitcoin Treasury (Hot Take)](lodge-bitcoin-treasury-hot-take.md) | Opinion / Bitcoin | 2026-03-16 |
+| [Rebuttal: You Can't Automate Your Way Out of Compliance](rebuttal-crypto-accounting-automation.md) | Compliance / Accounting | 2026-03-16 |
