@@ -1,6 +1,6 @@
-# Passkeys and Australian Crypto Exchanges: Who's Protecting You and Who Isn't?
+# Get Paid In Bitcoin Launches Passkey Authentication — A First for Australian Crypto
 
-We noticed last month that the DCA platform [www.getpaidinbitcoin.com.au](https://www.getpaidinbitcoin.com.au) recently rolled out passkey authentication. That caught our attention — not because passkeys are new, but because an Australian Bitcoin platform beat most of the country's major exchanges to one of the most important security upgrades in a decade.
+Australian Bitcoin platform [Get Paid In Bitcoin (GPIB)](https://www.getpaidinbitcoin.com.au) has launched passkey authentication for all users, making it the only cryptocurrency platform in Australia to offer the FIDO2/WebAuthn security standard [recommended by the Australian Signals Directorate](https://www.cyber.gov.au/protect-yourself/secure-your-accounts/passkeys). The move comes as SIM swap fraud surged [1,055% in 2024](https://keepnetlabs.com/blog/what-is-sim-swap-fraud) and every other major Australian exchange — including CoinSpot, Swyftx, and Independent Reserve — continues to rely on password-and-TOTP authentication that remains vulnerable to phishing.
 
 If you're using an Australian crypto exchange in 2026 and your login still depends on a password and a six-digit code from Google Authenticator, you're using security technology from 2012. The rest of the internet has moved on. The question is: has your exchange?
 
