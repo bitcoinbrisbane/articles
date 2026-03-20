@@ -1,8 +1,10 @@
 # Remember Proof of Burn? The $150 Million Bonfire
 
-I was promised a "fair launch." No pre-mine, no insider allocation, no VC advantage. Just burn your Bitcoin to prove commitment, and receive tokens in return. It sounded elegant — even poetic. Sacrifice something real to create something new.
+Remember the "fair launch"? No pre-mine, no insider allocation, no VC advantage. Just burn your Bitcoin to prove commitment, and receive tokens in return. It sounded elegant — even poetic. Sacrifice something real to create something new.
 
-So I watched people send their Bitcoin to addresses like `1CounterpartyXXXXXXXXXXXXXXXUWLpVr`. Addresses with patterns so obviously human-crafted that no private key could possibly exist for them. Addresses that were, by mathematical certainty, digital crematoriums.
+This was 2014. Before The DAO. Before the ICO mania of 2017. Before we learned that every novel token distribution mechanism was just a new way to separate people from their money.
+
+I watched people send their Bitcoin to addresses like `1CounterpartyXXXXXXXXXXXXXXXUWLpVr`. Addresses with patterns so obviously human-crafted that no private key could possibly exist for them. Addresses that were, by mathematical certainty, digital crematoriums.
 
 They burned over 2,130 BTC.
 
@@ -12,7 +14,9 @@ What a monumentally stupid idea.
 
 ## 1. What Was Proof of Burn?
 
-Proof of Burn was a token distribution mechanism conceived as the "fair" alternative to ICOs. Instead of paying a project team for tokens (which might make them securities), you'd destroy Bitcoin — sending it to an address that provably has no private key — and receive new tokens in proportion to what you burned.
+Proof of Burn was a token distribution mechanism conceived as the "fair" alternative to what would later become ICOs. Instead of paying a project team for tokens (which might make them securities), you'd destroy Bitcoin — sending it to an address that provably has no private key — and receive new tokens in proportion to what you burned.
+
+This predates the ICO craze by three years. Ethereum's crowdsale was still six months away. The 2017 ICO mania — where projects raised hundreds of millions on nothing but a whitepaper — hadn't happened yet. Proof of Burn was the original attempt at "fair" token distribution, and it set the template for the nonsense that followed.
 
 [Counterparty](https://counterparty.io/) was the most prominent project to use this mechanism. Launched in January 2014, it allowed users to create and trade custom assets on the Bitcoin blockchain — a "Bitcoin 2.0" platform before Ethereum existed.
 
@@ -131,7 +135,7 @@ Proof of Burn was a clever cryptographic mechanism in search of a problem that d
 
 ---
 
-*Did you participate in the Counterparty burn or other Proof of Burn projects? I'd be interested in your perspective in the comments.*
+*What's the worst token distribution mechanism you've seen? I'd be interested in your perspective in the comments.*
 
 ---
 
