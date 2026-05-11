@@ -15,3 +15,4 @@ A collection of technical articles and reviews for LinkedIn, focusing on cryptoc
 | [Passkeys and Australian Crypto Exchanges](passkeys-australian-exchanges.md) | Security / Exchanges | 2026-03-17 |
 | [Passkeys and Australian Crypto Exchanges (Reddit)](passkeys-reddit.md) | Security / Exchanges | 2026-03-24 |
 | [Remember Proof of Burn? The $150 Million Bonfire](proof-of-burn-counterparty.md) | Project Review / Bitcoin | 2026-03-20 |
+| [Bitcoin Has a Monoculture Problem — And It's Written in C++](bitcoin-client-diversity.md) | Opinion / Bitcoin | 2026-05-11 |
