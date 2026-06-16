@@ -16,16 +16,18 @@ This is the same primitive that lets a [Bitcoin SPV client](https://developer.bi
 
 ## 2. How an election would use it
 
-A naive sketch:
+The simplest version — public, named voting:
 
-1. At registration, the voter generates a secret nonce and submits a salted commitment — `hash(voter_id || nonce || chosen_candidate)` — at the polling station.
-2. Every commitment becomes a leaf in a Merkle tree.
-3. After polls close, the election authority publishes the **Merkle root** and the tally.
-4. Each voter receives their leaf and the sibling-hash path. They can independently verify their vote is included in the published root, without revealing their identity to anyone else.
+1. Each voter's leaf is `hash(full_name || chosen_candidate)`, where the name is exactly as it appears on the electoral roll.
+2. Every leaf becomes part of a Merkle tree.
+3. After polls close, the election authority publishes the **Merkle root**, the full list of leaves, and the tally.
+4. Anyone — voter, candidate, journalist, foreign observer — can recompute the root from the leaves, confirm any named voter's leaf is included, and add up the candidates to check the total matches.
 
-Hashing the name alone — which is the version most people pitch — doesn't work. Names aren't unique, and a rainbow table cracks it in seconds. The salted commitment is the part that matters.
+This is maximally transparent. It's also maximally public: the electoral roll is already public, so anyone can take a name, try `hash(name || candidate)` for each of the handful of candidates, and see how that person voted. That's not a bug in this version — it's the trade-off. It's closer to a show of hands or a signed petition than a secret ballot: total verifiability in exchange for vote secrecy.
 
-The result: a voter can mathematically prove their vote was counted. An auditor can prove the total matches the leaves. Neither needs to trust the election authority.
+Of course, to make it more secure — to keep the *how you voted* part private — we'd need a nonce: a secret random value the voter holds, so the leaf becomes `hash(full_name || nonce || chosen_candidate)`. Now the leaf is uncrackable without the nonce, and only the voter can prove which leaf is theirs. You get verifiability *and* secrecy, at the cost of every voter having to safeguard a secret. That's the version worth building. But even the naive, fully-public one is strictly better than today's "trust us."
+
+The result either way: a voter can mathematically prove their vote was counted. An auditor can prove the total matches the leaves. Neither needs to trust the election authority.
 
 ## 3. Crypto has been doing this since 2013
 
