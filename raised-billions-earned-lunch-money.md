@@ -102,7 +102,11 @@ The uncomfortable question isn't "is this a scam?" It's the one every founder ev
 
 ## Call to Action
 
-I hold some of these tokens. I want the technology to work. So I'm genuinely asking, not rhetorically posturing: **at what point does a chain's daily revenue have to matter?** If a network raised $458 million and earns $270 a day five years later, is that a startup that's early — or a valuation that's wrong? Where's the line for you? Tell me in the comments, and tell me which chain you think actually earns its market cap.
+I'll be honest about where I've landed: I'm a Bitcoin and Ethereum maximalist, and charts like this are exactly why. **Bitcoin and Ethereum earn their keep.** People pay real money, every single day, to settle on them — [Ethereum alone routinely clears millions in daily fees](https://defillama.com/chain/ethereum), and Bitcoin secures more value than every project in that table combined. They didn't raise nine figures on a promise and then coast on a token price. They shipped, and the market votes for them with its wallet, block after block.
+
+Everything else on that chart is a lesson in the same mistake: capital raised on narrative, valuation mistaken for product, and a chain almost nobody pays to use. The alt-L1 and L2 graveyard keeps filling up because the fees never showed up.
+
+So here's my pitch, not a question: **stick to the real chains.** If you want exposure to blockchains that actually generate revenue, the two that always have are the two that always will. Think I'm wrong? Show me the alt that earns its market cap in daily fees — I'll wait in the comments.
 
 ---
 
