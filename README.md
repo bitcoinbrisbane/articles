@@ -17,3 +17,4 @@ A collection of technical articles and reviews for LinkedIn, focusing on cryptoc
 | [Remember Proof of Burn? The $150 Million Bonfire](proof-of-burn-counterparty.md) | Project Review / Bitcoin | 2026-03-20 |
 | [Bitcoin Has a Monoculture Problem — And It's Written in C++](bitcoin-client-diversity.md) | Opinion / Bitcoin | 2026-05-11 |
 | ["It's Rigged" — Or, Why Elections Need Merkle Trees](merkle-trees-elections.md) | Opinion / Cryptography | 2026-06-04 |
+| [Raised Billions, Earns Lunch Money: zkSync, Polkadot & Tezos](raised-billions-earned-lunch-money.md) | Project Review / L1s & L2s | 2026-07-30 |
