@@ -4,7 +4,7 @@ I still have a paper wallet I generated on [bitaddress.org](https://www.bitaddre
 
 So I spent a weekend reading the actual code of three wallets people relied on between 2011 and 2014 — bitaddress.org, bitcoinj, and Electrum. Same era. Same curve ([secp256k1](https://en.bitcoin.it/wiki/Secp256k1)). Wildly different safety. And the thing that separated the safe from the catastrophic wasn't the cryptography — the elliptic-curve maths was identical and correct in all three. It was the randomness. Randomness is where early wallets quietly lived or died, and almost nobody was looking.
 
-Here's what I found.
+The findings are below.
 
 ## 1. Why randomness is the whole ballgame
 
@@ -22,7 +22,7 @@ Whole-pool seeding from the browser's proper cryptographic RNG, `window.crypto.g
 
 What actually saved most bitaddress users was the ritual I rolled my eyes at: the mouse-wiggling. Collecting mouse-movement entropy was added [all the way back in version 0.5, 2011-09-19](https://github.com/pointbiz/bitaddress.org/blob/master/CHANGELOG.txt) ("Added extra entrophy with mouse movement technique"). The exact microsecond timings of a human dragging a cursor are genuinely hard for a remote attacker to reproduce, and they got mixed into the pool. That human-in-the-loop entropy is probably why we didn't see a bloodbath of drained paper wallets.
 
-But here's the part that still bothers me: **a weak key leaves no fingerprint on-chain.** A key generated with too little entropy looks identical to a perfect one until the day someone guesses it. You can never prove your old paper wallet was safe. You can only stop relying on the question.
+The part that still bothers me is this: **a weak key leaves no fingerprint on-chain.** A key generated with too little entropy looks identical to a perfect one until the day someone guesses it. You can never prove your old paper wallet was safe. You can only stop relying on the question.
 
 ## 3. bitcoinj — the one where people actually lost coins
 
