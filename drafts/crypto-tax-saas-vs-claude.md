@@ -37,7 +37,7 @@ CoinSpot offers several tax exports from its Order History page, including a [Bu
 1. Summ, on the cheapest plan that covers her transaction count
 2. Koinly, on the cheapest plan that covers her transaction count
 3. Syla, on the cheapest plan that covers her transaction count
-4. Claude [MODEL(S)], using one prompt (in the appendix, so you can repeat it)
+4. Claude [MODEL(S)], using one prompt (shown in full in section 5)
 
 **Measures:** price for one financial year, time from upload to report, whether the tool warns about missing cost bases, and whether the net capital gain matches a hand-checked figure.
 
@@ -81,6 +81,50 @@ So the test has two parts:
 1. Give each tool the Buys/Sells file alone. Does it warn about the missing cost bases, or report a A$74,000 gain?
 2. Give each tool the full history, with the Sends/Receives export added, and compare the net capital gain with a hand-checked figure.
 
+### The Claude run
+
+Here's the exact prompt, so you can repeat it. I attached Sarah's Buys/Sells CSV in [claude.ai / the Claude app / the API] with [MODEL] and sent:
+
+> You are preparing an Australian capital gains tax summary for an individual taxpayer from the attached CoinSpot transaction history CSV.
+>
+> **Scope**
+> - Financial year: 1 July 2025 to 30 June 2026.
+> - The taxpayer is an Australian resident individual and an investor, not a trader. Treat all disposals as CGT events.
+> - Use the full CSV history so cost bases include purchases made in earlier years.
+>
+> **Method**
+> 1. List the columns you found and how you interpret each one. State any assumptions.
+> 2. Treat every sale, and every crypto-to-crypto swap, as a CGT event. A swap disposes of one asset and acquires the other at its AUD market value.
+> 3. Include fees in the cost base (buys) and deduct them from capital proceeds (sells).
+> 4. Match disposals to acquisitions using FIFO, and say so in the output.
+> 5. Work out the holding period of each parcel disposed of. Apply the 50% CGT discount to gains on assets held at least 12 months, after offsetting capital losses.
+> 6. Apply capital losses against non-discount gains first, then discount gains, before applying the discount.
+> 7. List any rows you cannot classify (deposits, withdrawals, transfers, staking, rewards) separately. Do not guess.
+>
+> **Output**
+> 1. A table of every CGT event in the year: date, asset, quantity, proceeds (AUD), cost base (AUD), acquisition date(s), holding period, gain or loss, discount eligible (Y/N).
+> 2. A summary: total gains, total losses, discount applied and net capital gain, with working.
+> 3. Remaining holdings at 30 June 2026 with cost bases, to carry into next year.
+> 4. Assumptions and flagged rows.
+> 5. A downloadable CSV of the CGT event table.
+>
+> Recompute the totals from the event table before giving the final figures.
+
+**Run details**
+
+- Model: [MODEL]
+- Date: [DATE]
+- Time from sending the prompt to the final answer: [MM:SS]
+- Cost: [US$ from token usage, or "included in my Claude plan"]
+
+**What it said**
+
+[PASTE: the summary section (total gains, total losses, discount applied, net capital gain), plus its assumptions and flagged rows. Did it catch the missing stablecoin cost bases, or report a A$74,000 gain?]
+
+[PASTE or screenshot: the first few rows of the CGT event table.]
+
+[REPEAT this block for the full-history run once the Sends/Receives export is added.]
+
 ### The comparison
 
 | | Summ | Koinly | Syla | Claude [MODEL] |
@@ -120,37 +164,6 @@ Whatever tool you use, the output still goes on your tax return under your name.
 ---
 
 *Have you tried doing your crypto tax with an LLM? Did it match what your software or accountant came up with? I'd like to hear in the comments.*
-
----
-
-## Appendix: the prompt
-
-Attach the CoinSpot transaction history CSV, then send:
-
-> You are preparing an Australian capital gains tax summary for an individual taxpayer from the attached CoinSpot transaction history CSV.
->
-> **Scope**
-> - Financial year: 1 July 2025 to 30 June 2026.
-> - The taxpayer is an Australian resident individual and an investor, not a trader. Treat all disposals as CGT events.
-> - Use the full CSV history so cost bases include purchases made in earlier years.
->
-> **Method**
-> 1. List the columns you found and how you interpret each one. State any assumptions.
-> 2. Treat every sale, and every crypto-to-crypto swap, as a CGT event. A swap disposes of one asset and acquires the other at its AUD market value.
-> 3. Include fees in the cost base (buys) and deduct them from capital proceeds (sells).
-> 4. Match disposals to acquisitions using FIFO, and say so in the output.
-> 5. Work out the holding period of each parcel disposed of. Apply the 50% CGT discount to gains on assets held at least 12 months, after offsetting capital losses.
-> 6. Apply capital losses against non-discount gains first, then discount gains, before applying the discount.
-> 7. List any rows you cannot classify (deposits, withdrawals, transfers, staking, rewards) separately. Do not guess.
->
-> **Output**
-> 1. A table of every CGT event in the year: date, asset, quantity, proceeds (AUD), cost base (AUD), acquisition date(s), holding period, gain or loss, discount eligible (Y/N).
-> 2. A summary: total gains, total losses, discount applied and net capital gain, with working.
-> 3. Remaining holdings at 30 June 2026 with cost bases, to carry into next year.
-> 4. Assumptions and flagged rows.
-> 5. A downloadable CSV of the CGT event table.
->
-> Recompute the totals from the event table before giving the final figures.
 
 ---
 
