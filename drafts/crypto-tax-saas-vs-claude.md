@@ -45,14 +45,16 @@ All three tax products follow the same model. You can import your transactions a
 
 Price is set by transaction count:
 
-| Transactions | Summ | Koinly | Syla |
-|---|---|---|---|
-| Entry plan | A$49 (100 txns) | $69 (100 txns) | A$49 (200 txns) |
-| Next tier | A$129 (1,000 txns) | $149 (1,000 txns) | A$129 (2,000 txns) |
-| Mid tier | A$249 (10,000 txns) | $299 (3,000 txns) | A$249 (20,000 txns) |
-| Top listed tier | A$399 (100,000 txns) | $399 (10,000+ txns) | A$399 (100,000 txns) |
+| Transactions | Koinly | Syla |
+|---|---|---|
+| Entry plan | $69 (100 txns) | A$49 (200 txns) |
+| Next tier | $149 (1,000 txns) | A$129 (2,000 txns) |
+| Mid tier | $299 (3,000 txns) | A$249 (20,000 txns) |
+| Top listed tier | $399 (10,000+ txns) | A$399 (100,000 txns) |
 
-Sources: [Summ pricing via Finder](https://www.finder.com.au/cryptocurrency-tax/summ-review), [Koinly pricing via Finder](https://www.finder.com.au/cryptocurrency-tax/koinly), [Syla pricing](https://www.syla.com.au/pricing). Each is an annual subscription. [CHECK: Summ's own pricing page currently shows more than one price set, and Finder notes Summ's limit is cumulative across all tax years, not per year.]
+Sources: [Koinly pricing via Finder](https://www.finder.com.au/cryptocurrency-tax/koinly), [Syla pricing](https://www.syla.com.au/pricing). Each is an annual subscription.
+
+**Summ isn't in the table, because I couldn't work out what it costs.** Summ's own website gives conflicting prices. Its [Australian pricing page](https://summ.com/au/pricing/personal) shows more than one set of plans at once: Rookie, Hobbyist and Trader in one place, an extra Investor tier in another, and a separate Free, Starter, Complete and Advanced line-up elsewhere. The top tier is A$399 in one set and A$499 in another, and a "Complete" plan appears at A$199. Its [Koinly alternatives article](https://summ.com/au/blog/alternatives-to-koinly-australia) lists Rookie at $49 for 100 transactions, Hobbyist at $129 for 1,000, and an Investor plan at $249 listed for both 3,000 and 10,000 transactions. If a crypto tax product can't keep its own prices consistent, that's worth knowing before you trust it with your cost bases. [LUCAS: add what Summ actually charged you at checkout.]
 
 The transaction limits matter more than the headline price. Sarah has [N] transactions, which puts her on the [TIER] plan with each product, at [$] to [$] a year.
 
@@ -140,7 +142,7 @@ Attach the CoinSpot transaction history CSV, then send:
 - [ATO: CGT discount](https://www.ato.gov.au/Individuals/Capital-gains-tax/CGT-discount/)
 - [ATO fires warning shots on cryptocurrency cost base, record-keeping (Public Accountant)](https://publicaccountant.com.au/news/ato-fires-warning-shots-on-cryptocurrency-cost-base-record-keeping/)
 - [Summ pricing, Australia](https://summ.com/au/pricing/personal)
-- [Summ review 2026 (Finder)](https://www.finder.com.au/cryptocurrency-tax/summ-review)
+- [Summ: Best Koinly alternatives for Australia](https://summ.com/au/blog/alternatives-to-koinly-australia)
 - [Koinly review 2026 (Finder)](https://www.finder.com.au/cryptocurrency-tax/koinly)
 - [Syla pricing](https://www.syla.com.au/pricing)
 - [Syla: Choosing the best plan for you](https://help.syla.com.au/en/articles/8282736-choosing-the-best-plan-for-you)
